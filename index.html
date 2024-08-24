@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jokerz Inoff Bewerbung</title>
+    <link rel="icon" href="Jokerz-Logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <!-- Particle Net Background -->
+    <canvas class="particle-net"></canvas>
+
+    <!-- Dunkel-/Hellmodus-Umschalter -->
+    <div class="dark-light">
+      <svg
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="1.5"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+      </svg>
+    </div>
+
+    <div class="app">
+      <div class="header">
+        <button class="burger-menu" onclick="toggleBurgerMenu()">☰</button>
+      </div>
+      <div class="wrapper">
+        <div class="left-side" id="side-menu">
+          <div class="side-wrapper">
+            <div class="side-title"><h2>Jokerz</h2></div>
+            <div class="side-menu">
+              <a href="#" class="menu-link" onclick="showPage('home')"
+                >Startseite</a
+              >
+              <a href="#" class="menu-link" onclick="showPage('history')"
+                >Geschichte</a
+              >
+              <a href="#" class="menu-link" onclick="showPage('goals')"
+                >Ziele</a
+              >
+              <a href="#" class="menu-link" onclick="showPage('businessplan')"
+                >Geschäftsmodell</a
+              >
+              <a
+                href="#"
+                class="menu-link"
+                onclick="showPage('colorandclothing')"
+                >Farben und Kleidung</a
+              >
+              <a href="#" class="menu-link" onclick="showPage('garage')"
+                >Fuhrpark</a
+              >
+              <a href="#" class="menu-link" onclick="showPage('house')"
+                >Aktuelle lage</a
+              >
+              <a href="#" class="menu-link" onclick="showPage('ranks')"
+                >Ränge</a
+              >
+              <a href="#" class="menu-link" onclick="showPage('impressum')"
+                >Impressum</a
+              >
+              <a href="#" class="menu-link" onclick="showPage('more')">Mehr</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-container">
+          <div class="main-content">
+            <!-- Home Page -->
+            <div id="home" class="content page active">
+              <div class="content-wrapper-header centered-content">
+                <div class="content-wrapper-context">
+                  <img src="Jokerz-Logo.png" alt="Famlogo" class="logo-image" />
+                  <h1 class="img-content">Jokerz Inoff Bewerbung</h1>
+                </div>
+              </div>
+            </div>
+
+            <!-- History Page -->
+            <div id="history" class="content page">
+              <div class="content-wrapper-header">
+                <div class="content-wrapper-context">
+                  <h1 class="img-content">Unsere Geschichte</h1>
+                  <div class="content-text">
+                    Die Familie Jokerz, angeführt von Joker Jokerz, hat eine
+                    faszinierende und zugleich düstere Vorgeschichte, die tief
+                    in die Unterwelt der Kriminalität und des organisierten
+                    Verbrechens eintaucht. Joker Jokerz, geboren als Raymond
+                    Kingsley, wuchs in den rauen Straßen von Los Santos auf.
+                    Schon in jungen Jahren wurde er mit der brutalen Realität
+                    des Lebens konfrontiert. Sein Vater war ein kleiner Gauner,
+                    der sich mit Diebstählen und kleinen Betrügereien über
+                    Wasser hielt. Seine Mutter, eine kränkliche Frau, starb früh
+                    an einer Überdosis. Diese traumatische Kindheit prägte
+                    Raymond und ließ ihn frühzeitig erwachsen werden. Mit 16
+                    Jahren hatte Raymond bereits eine kleine Bande von
+                    Jugendlichen um sich geschart, die gemeinsam kleinere
+                    Raubüberfälle und Einbrüche verübten. Sein Spitzname "Joker"
+                    entstand in dieser Zeit, weil er immer ein breites,
+                    unerschütterliches Lächeln auf seinem Gesicht trug, selbst
+                    in den gefährlichsten Situationen. Sein Charisma und seine
+                    Fähigkeit, Menschen zu manipulieren, machten ihn schnell zu
+                    einem gefürchteten und respektierten Anführer in der
+                    Unterwelt. In seinen frühen Zwanzigern beschloss Joker,
+                    seine kriminellen Aktivitäten zu professionalisieren. Er
+                    gründete die Familie Jokerz, eine kriminelle Organisation,
+                    die sich auf Waffenhandel und Familien Unternehmen
+                    spezialisierte. Unter seiner Führung wuchs die Familie
+                    Jokerz schnell zu einer der mächtigsten und
+                    einflussreichsten Verbrecherorganisationen in Los Santos
+                    heran. Die Familie Jokerz operierte jahrzehntelang
+                    erfolgreich und expandierte ihre Aktivitäten sogar in andere
+                    Städte und Länder. Doch mit der Zeit geriet Joker Jokerz
+                    zunehmend ins Visier der Strafverfolgungsbehörden. Trotz
+                    zahlreicher Versuche, ihn zu fassen, gelang es den Behörden
+                    nie, genügend Beweise zu sammeln, um ihn hinter Gitter zu
+                    bringen. Heute bleibt die Familie Jokerz ein Symbol für
+                    Macht, und Gefahr in der kriminellen Unterwelt. Und Joker
+                    Jokerz, der Mann mit dem unerschütterlichen Lächeln, bleibt
+                    eine Legende – sowohl gefürchtet als auch bewundert.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Goals Page -->
+            <div id="goals" class="content page">
+              <div class="content-wrapper-header">
+                <div class="content-wrapper-context">
+                  <h1 class="img-content">Unsere Ziele</h1>
+                  <div class="content-text">
+                    <p>● Spass haben</p>
+                    <p>● Terrorstatus</p>
+                    <p>● Terrorstatus</p>
+                    <p>● Grosse und einflussreiche Famiie werden</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Business Plan Page -->
+            <div id="businessplan" class="content page">
+              <div class="content-wrapper-header">
+                <div class="content-wrapper-context">
+                  <h1 class="img-content">Geschäftsmodell</h1>
+                  <div class="content-text"></div>
+                  <p>● Hafenschlachten</p>
+                  <p>● Schutzgelderpressung</p>
+                  <p>● Familien Unternehmen</p>
+                  <p>● Kampf um Rangfolge</p>
+                  <p>● Waffenhandel</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Color and Clothing Page -->
+            <div id="colorandclothing" class="content page">
+              <div class="content-wrapper-header">
+                <div class="content-wrapper-context">
+                  <h1 class="img-content">Farben und Kleidung</h1>
+                  <img
+                    src="https://placehold.co/200x300"
+                    alt="Familienuniform"
+                  />
+                  <div class="content-text">
+                    <p>Unsere Familienkleidung ist:</p>
+                    <p>
+                      <strong>Oberteil:</strong>58 <strong>Farbe:</strong> 1
+                    </p>
+                    <p>
+                      <strong>Unterteil:</strong> 7 <strong>Farbe:</strong> 1
+                    </p>
+                    <p><strong>Schuhe:</strong> Schwarz</p>
+                    <p>
+                      Ab Rang 7 ist keine Uniform erforderlich, solange sie
+                      vollständig schwarz ist.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Garage Page -->
+            <div id="garage" class="content page">
+              <div class="content-wrapper-header">
+                <div class="content-wrapper-context">
+                  <h1 class="img-content">Fuhrpark</h1>
+                  <img
+                    src="https://placehold.co/400x400"
+                    alt="Fuhrpark Bild"
+                    class="house-image"
+                  />
+                  <div class="content-text">
+                    Unsere Fahrzeuge Farbe ist <strong>Matt Schwarz</strong> mit
+                    <strong>Weissem unterboden</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- House Page -->
+            <div id="house" class="content page">
+              <div class="content-wrapper-header">
+                <div class="content-wrapper-context">
+                  <h1 class="img-content">Anwesen</h1>
+                  <img
+                    src="https://placehold.co/450x400"
+                    width="950"
+                    height="500"
+                    alt="Haus Bild"
+                    class="house-image"
+                  />
+                  <div class="content-text">Haus Nr. xxx</div>
+                  <h1 class="img-content">Lage</h1>
+                  <div class="content-text">Haus Nr. xxx</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ranks Page -->
+            <div id="ranks" class="content page">
+              <div class="content-wrapper-header centered-content">
+                <div class="content-wrapper-context">
+                  <h1 class="img-content">Ränge</h1>
+                  <div class="table-container">
+                    <table class="ranks-table">
+                      <thead>
+                        <tr>
+                          <th>Rang</th>
+                          <th>Name</th>
+                          <th>Beschreibung</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Probemitglied</td>
+                          <td>
+                            Neue Mitglieder, die sich in der Probezeit befinden
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Mitglied</td>
+                          <td>
+                            Vollwertige Mitglieder mit Zugang zu allen
+                            Veranstaltungen
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Gangster</td>
+                          <td>
+                            Gangster, die an organisierten Aktivitäten
+                            teilnehmen
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>Turfer</td>
+                          <td>
+                            Mitglieder, die für die Verteidigung des Gebiets
+                            verantwortlich sind
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>Recruiter</td>
+                          <td>
+                            Rekrutierer, die mit der Suche nach neuen
+                            Mitgliedern beauftragt sind
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td>Mainteam</td>
+                          <td>
+                            Hauptteam, das die wichtigsten Operationen
+                            durchführt
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>7</td>
+                          <td>Eventleiter</td>
+                          <td>
+                            Leiter, die für die Organisation von Veranstaltungen
+                            verantwortlich sind
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>8</td>
+                          <td>Management</td>
+                          <td>
+                            Management, das die Gesamtoperationen überwacht
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>9</td>
+                          <td>Vize-OG</td>
+                          <td>Stellvertreter, die den OG unterstützen</td>
+                        </tr>
+                        <tr>
+                          <td>10</td>
+                          <td>OG</td>
+                          <td>Original Gangsters, die die Gruppe führen</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Impressum Page -->
+            <div id="impressum" class="content page">
+              <div class="content-wrapper-header centered-content">
+                <div class="content-wrapper-context impressum-wrapper">
+                  <h1 class="img-content">Impressum</h1>
+                  <div class="impressum-content">
+                    <p><strong>Familien Name:</strong> Jokerz</p>
+                    <p><strong>Gründer:</strong> Joker Jokerz | 97020</p>
+                    <p><strong>Hausnummer:</strong> 31</p>
+                    <p><strong>Forum:</strong> Raymond Kingsley</p>
+                    <p><strong>Discord:</strong> miroshii</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- More Page -->
+            <div id="more" class="content page">
+              <div class="content-wrapper-header">
+                <div class="content-wrapper-context more-wrapper">
+                  <h1 class="img-content">Warum wir Inoff brauchen</h1>
+                  <div class="more-content"></div>
+                  <p>● Reichweite</p>
+                  <p>● Inoff Events</p>
+                  <p>● Kriminalität steigern</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay-app" onclick="closeBurgerMenu()"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
